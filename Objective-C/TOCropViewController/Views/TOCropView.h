@@ -23,7 +23,7 @@
 #import <UIKit/UIKit.h>
 #import "TOCropViewConstants.h"
 
-@class TOCropOverlayView;
+@class CTOCropOverlayView;
 @class TOCropView;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  A grid view overlaid on top of the foreground image view's container.
  */
-@property (nonnull, nonatomic, strong, readonly) TOCropOverlayView *gridOverlayView;
+@property (nonnull, nonatomic, strong, readonly) CTOCropOverlayView *gridOverlayView;
 
 /**
  A container view that clips the a copy of the image so it appears over the dimming view

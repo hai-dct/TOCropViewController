@@ -1,5 +1,5 @@
 //
-//  TOCropOverlayView.h
+//  CTOCropOverlayView.h
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -24,7 +24,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TOCropOverlayView : UIView
+@interface CTOCropOverlayView : UIView
 
 /** Hides the interior grid lines, sans animation. */
 @property (nonatomic, assign) BOOL gridHidden;

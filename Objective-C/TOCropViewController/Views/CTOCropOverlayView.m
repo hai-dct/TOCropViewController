@@ -1,5 +1,5 @@
 //
-//  TOCropOverlayView.m
+//  CTOCropOverlayView.m
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -20,11 +20,11 @@
 //  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "TOCropOverlayView.h"
+#import "CTOCropOverlayView.h"
 
 static const CGFloat kTOCropOverLayerCornerWidth = 20.0f;
 
-@interface TOCropOverlayView ()
+@interface CTOCropOverlayView ()
 
 @property (nonatomic, strong) NSArray *horizontalGridLines;
 @property (nonatomic, strong) NSArray *verticalGridLines;
@@ -38,7 +38,7 @@ static const CGFloat kTOCropOverLayerCornerWidth = 20.0f;
 
 @end
 
-@implementation TOCropOverlayView
+@implementation CTOCropOverlayView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

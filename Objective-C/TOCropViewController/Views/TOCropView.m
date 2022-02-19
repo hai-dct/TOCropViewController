@@ -21,7 +21,7 @@
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import "TOCropView.h"
-#import "TOCropOverlayView.h"
+#import "CTOCropOverlayView.h"
 #import "TOCropScrollView.h"
 
 #define TOCROPVIEW_BACKGROUND_COLOR [UIColor colorWithWhite:0.12f alpha:1.0f]
@@ -59,7 +59,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
 @property (nonatomic, strong) UIView *overlayView;                  /* A semi-transparent grey view, overlaid on top of the background image */
 @property (nonatomic, strong) UIView *translucencyView;             /* A blur view that is made visible when the user isn't interacting with the crop view */
 @property (nonatomic, strong) id translucencyEffect;                /* The dark blur visual effect applied to the visual effect view. */
-@property (nonatomic, strong, readwrite) TOCropOverlayView *gridOverlayView;   /* A grid view overlaid on top of the foreground image view's container. */
+@property (nonatomic, strong, readwrite) CTOCropOverlayView *gridOverlayView;   /* A grid view overlaid on top of the foreground image view's container. */
 
 /* Gesture Recognizers */
 @property (nonatomic, strong) UIPanGestureRecognizer *gridPanGestureRecognizer; /* The gesture recognizer in charge of controlling the resizing of the crop view */
@@ -225,7 +225,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
     if (circularMode) { return; }
     
     // The white grid overlay view
-    self.gridOverlayView = [[TOCropOverlayView alloc] initWithFrame:self.foregroundContainerView.frame];
+    self.gridOverlayView = [[CTOCropOverlayView alloc] initWithFrame:self.foregroundContainerView.frame];
     self.gridOverlayView.userInteractionEnabled = NO;
     self.gridOverlayView.gridHidden = YES;
     [self addSubview:self.gridOverlayView];
