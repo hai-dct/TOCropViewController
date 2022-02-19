@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "CTOCropViewController.h"
 
-@interface ViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, TOCropViewControllerDelegate>
+@interface ViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, CTOCropViewControllerDelegate>
 
 @property (nonatomic, strong) UIImage *image;           // The image we'll be cropping
 @property (nonatomic, strong) UIImageView *imageView;   // The image view to present the cropped image

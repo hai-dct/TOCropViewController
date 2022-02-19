@@ -32,7 +32,7 @@
 /// @name Delegate
 ///------------------------------------------------
 
-@protocol TOCropViewControllerDelegate <NSObject>
+@protocol CTOCropViewControllerDelegate <NSObject>
 @optional
 
 /**
@@ -100,7 +100,7 @@
  The view controller's delegate that will receive the resulting
  cropped image, as well as crop information.
  */
-@property (nullable, nonatomic, weak) id<TOCropViewControllerDelegate> delegate;
+@property (nullable, nonatomic, weak) id<CTOCropViewControllerDelegate> delegate;
 
 /**
  If true, when the user hits 'Done', a UIActivityController will appear
