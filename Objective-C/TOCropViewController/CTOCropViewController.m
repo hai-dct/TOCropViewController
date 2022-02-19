@@ -25,7 +25,7 @@
 #import "CTOCropViewControllerTransitioning.h"
 #import "CTOActivityCroppedImageProvider.h"
 #import "UIImage+CropRotate.h"
-#import "TOCroppedImageAttributes.h"
+#import "CTOCroppedImageAttributes.h"
 
 static const CGFloat kTOCropViewControllerTitleTopPadding = 14.0f;
 static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
@@ -909,7 +909,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     //If desired, when the user taps done, show an activity sheet
     if (self.showActivitySheetOnDone) {
         CTOActivityCroppedImageProvider *imageItem = [[CTOActivityCroppedImageProvider alloc] initWithImage:self.image cropFrame:cropFrame angle:angle circular:(self.croppingStyle == TOCropViewCroppingStyleCircular)];
-        TOCroppedImageAttributes *attributes = [[TOCroppedImageAttributes alloc] initWithCroppedFrame:cropFrame angle:angle originalImageSize:self.image.size];
+        CTOCroppedImageAttributes *attributes = [[CTOCroppedImageAttributes alloc] initWithCroppedFrame:cropFrame angle:angle originalImageSize:self.image.size];
         
         NSMutableArray *activityItems = [@[imageItem, attributes] mutableCopy];
         if (self.activityItems) {

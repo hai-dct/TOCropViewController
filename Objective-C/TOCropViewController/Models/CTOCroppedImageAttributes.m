@@ -1,5 +1,5 @@
 //
-//  TOCroppedImageAttributes.m
+//  CTOCroppedImageAttributes.m
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -20,9 +20,9 @@
 //  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "TOCroppedImageAttributes.h"
+#import "CTOCroppedImageAttributes.h"
 
-@interface TOCroppedImageAttributes ()
+@interface CTOCroppedImageAttributes ()
 
 @property (nonatomic, assign, readwrite) NSInteger angle;
 @property (nonatomic, assign, readwrite) CGRect croppedFrame;
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation TOCroppedImageAttributes
+@implementation CTOCroppedImageAttributes
 
 - (instancetype)initWithCroppedFrame:(CGRect)croppedFrame angle:(NSInteger)angle originalImageSize:(CGSize)originalSize
 {

@@ -11,7 +11,7 @@
 		04262D8720F6F1D600024177 /* TOCropViewControllerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22C3C5491AC8CA0D00E86280 /* TOCropViewControllerLocalizable.strings */; };
 		04262D9C20F6FC4600024177 /* CTOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB4D891B234D07008B8466 /* CTOCropViewControllerTransitioning.h */; };
 		04262D9D20F6FC4600024177 /* CTOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB4D9C1B234D4F008B8466 /* CTOActivityCroppedImageProvider.h */; };
-		04262D9E20F6FC4600024177 /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BF961E1B2CD017009F4785 /* TOCroppedImageAttributes.h */; };
+		04262D9E20F6FC4600024177 /* CTOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BF961E1B2CD017009F4785 /* CTOCroppedImageAttributes.h */; };
 		04262DA020F6FC4600024177 /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB4D8E1B234D07008B8466 /* TOCropOverlayView.h */; };
 		04262DA120F6FC4600024177 /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB4D901B234D07008B8466 /* TOCropScrollView.h */; };
 		04262DA220F6FC4600024177 /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB4D921B234D07008B8466 /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,14 +20,14 @@
 		04262DA520F6FD1000024177 /* CropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2238CF3E1FC029A90081B957 /* CropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		144B8CD11D22CD650085D774 /* CTOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB4D891B234D07008B8466 /* CTOCropViewControllerTransitioning.h */; };
 		144B8CD21D22CD650085D774 /* CTOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB4D9C1B234D4F008B8466 /* CTOActivityCroppedImageProvider.h */; };
-		144B8CD31D22CD650085D774 /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BF961E1B2CD017009F4785 /* TOCroppedImageAttributes.h */; };
+		144B8CD31D22CD650085D774 /* CTOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BF961E1B2CD017009F4785 /* CTOCroppedImageAttributes.h */; };
 		144B8CD51D22CD650085D774 /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB4D8E1B234D07008B8466 /* TOCropOverlayView.h */; };
 		144B8CD61D22CD650085D774 /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB4D901B234D07008B8466 /* TOCropScrollView.h */; };
 		144B8CD71D22CD650085D774 /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB4D921B234D07008B8466 /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		144B8CD81D22CD650085D774 /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DB4D941B234D07008B8466 /* TOCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		144B8CDA1D22CD730085D774 /* CTOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8A1B234D07008B8466 /* CTOCropViewControllerTransitioning.m */; };
 		144B8CDB1D22CD730085D774 /* CTOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D9D1B234D4F008B8466 /* CTOActivityCroppedImageProvider.m */; };
-		144B8CDC1D22CD730085D774 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF961F1B2CD017009F4785 /* TOCroppedImageAttributes.m */; };
+		144B8CDC1D22CD730085D774 /* CTOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF961F1B2CD017009F4785 /* CTOCroppedImageAttributes.m */; };
 		144B8CDE1D22CD730085D774 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8F1B234D07008B8466 /* TOCropOverlayView.m */; };
 		144B8CDF1D22CD730085D774 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D911B234D07008B8466 /* TOCropScrollView.m */; };
 		144B8CE01D22CD730085D774 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D931B234D07008B8466 /* TOCropToolbar.m */; };
@@ -60,7 +60,7 @@
 		223DCEB61FBAA85D00F99209 /* CTOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D831B234CFA008B8466 /* CTOCropViewController.m */; };
 		22B68F951FFB380700601B1A /* CTOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8A1B234D07008B8466 /* CTOCropViewControllerTransitioning.m */; };
 		22B68F961FFB380700601B1A /* CTOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D9D1B234D4F008B8466 /* CTOActivityCroppedImageProvider.m */; };
-		22B68F971FFB380700601B1A /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF961F1B2CD017009F4785 /* TOCroppedImageAttributes.m */; };
+		22B68F971FFB380700601B1A /* CTOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF961F1B2CD017009F4785 /* CTOCroppedImageAttributes.m */; };
 		22B68F991FFB380700601B1A /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8F1B234D07008B8466 /* TOCropOverlayView.m */; };
 		22B68F9A1FFB380700601B1A /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D911B234D07008B8466 /* TOCropScrollView.m */; };
 		22B68F9B1FFB380700601B1A /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D931B234D07008B8466 /* TOCropToolbar.m */; };
@@ -68,13 +68,13 @@
 		22B68F9D1FFB380700601B1A /* CTOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D831B234CFA008B8466 /* CTOCropViewController.m */; };
 		22B68F9F1FFB3C0800601B1A /* CTOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8A1B234D07008B8466 /* CTOCropViewControllerTransitioning.m */; };
 		22B68FA01FFB3C0800601B1A /* CTOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D9D1B234D4F008B8466 /* CTOActivityCroppedImageProvider.m */; };
-		22B68FA11FFB3C0800601B1A /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF961F1B2CD017009F4785 /* TOCroppedImageAttributes.m */; };
+		22B68FA11FFB3C0800601B1A /* CTOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF961F1B2CD017009F4785 /* CTOCroppedImageAttributes.m */; };
 		22B68FA31FFB3C0800601B1A /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8F1B234D07008B8466 /* TOCropOverlayView.m */; };
 		22B68FA41FFB3C0800601B1A /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D911B234D07008B8466 /* TOCropScrollView.m */; };
 		22B68FA51FFB3C0800601B1A /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D931B234D07008B8466 /* TOCropToolbar.m */; };
 		22B68FA61FFB3C0800601B1A /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D951B234D07008B8466 /* TOCropView.m */; };
 		22B68FA71FFB3C0800601B1A /* CTOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D831B234CFA008B8466 /* CTOCropViewController.m */; };
-		22BF96201B2CD017009F4785 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF961F1B2CD017009F4785 /* TOCroppedImageAttributes.m */; };
+		22BF96201B2CD017009F4785 /* CTOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF961F1B2CD017009F4785 /* CTOCroppedImageAttributes.m */; };
 		22C3C5471AC8CA0D00E86280 /* TOCropViewControllerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22C3C5491AC8CA0D00E86280 /* TOCropViewControllerLocalizable.strings */; };
 		22DB4D961B234D07008B8466 /* CTOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8A1B234D07008B8466 /* CTOCropViewControllerTransitioning.m */; };
 		22DB4D981B234D07008B8466 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8F1B234D07008B8466 /* TOCropOverlayView.m */; };
@@ -86,7 +86,7 @@
 		2F5062E71F53E2D900AA9F14 /* TOCropViewControllerExample-Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F5062DC1F53E2D900AA9F14 /* TOCropViewControllerExample-Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2F5062EB1F53E31F00AA9F14 /* CTOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8A1B234D07008B8466 /* CTOCropViewControllerTransitioning.m */; };
 		2F5062EC1F53E31F00AA9F14 /* CTOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D9D1B234D4F008B8466 /* CTOActivityCroppedImageProvider.m */; };
-		2F5062ED1F53E31F00AA9F14 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF961F1B2CD017009F4785 /* TOCroppedImageAttributes.m */; };
+		2F5062ED1F53E31F00AA9F14 /* CTOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BF961F1B2CD017009F4785 /* CTOCroppedImageAttributes.m */; };
 		2F5062EF1F53E31F00AA9F14 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D8F1B234D07008B8466 /* TOCropOverlayView.m */; };
 		2F5062F01F53E31F00AA9F14 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D911B234D07008B8466 /* TOCropScrollView.m */; };
 		2F5062F11F53E31F00AA9F14 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4D931B234D07008B8466 /* TOCropToolbar.m */; };
@@ -170,8 +170,8 @@
 		2238CF3F1FC029A90081B957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2238CF441FC02AE00081B957 /* CTOCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTOCropViewController.h; sourceTree = "<group>"; };
 		223DCEB71FBAA91300F99209 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
-		22BF961E1B2CD017009F4785 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCroppedImageAttributes.h; sourceTree = "<group>"; };
-		22BF961F1B2CD017009F4785 /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCroppedImageAttributes.m; sourceTree = "<group>"; };
+		22BF961E1B2CD017009F4785 /* CTOCroppedImageAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTOCroppedImageAttributes.h; sourceTree = "<group>"; };
+		22BF961F1B2CD017009F4785 /* CTOCroppedImageAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTOCroppedImageAttributes.m; sourceTree = "<group>"; };
 		22C3C5481AC8CA0D00E86280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
 		22C3C54A1AC8CA0F00E86280 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
 		22C3C54B1AC8CA1000E86280 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/TOCropViewControllerLocalizable.strings; sourceTree = "<group>"; };
@@ -454,8 +454,8 @@
 				22DB4D8A1B234D07008B8466 /* CTOCropViewControllerTransitioning.m */,
 				22DB4D9C1B234D4F008B8466 /* CTOActivityCroppedImageProvider.h */,
 				22DB4D9D1B234D4F008B8466 /* CTOActivityCroppedImageProvider.m */,
-				22BF961E1B2CD017009F4785 /* TOCroppedImageAttributes.h */,
-				22BF961F1B2CD017009F4785 /* TOCroppedImageAttributes.m */,
+				22BF961E1B2CD017009F4785 /* CTOCroppedImageAttributes.h */,
+				22BF961F1B2CD017009F4785 /* CTOCroppedImageAttributes.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -489,7 +489,7 @@
 				144B8CD11D22CD650085D774 /* CTOCropViewControllerTransitioning.h in Headers */,
 				144B8CD21D22CD650085D774 /* CTOActivityCroppedImageProvider.h in Headers */,
 				FE3E0E3A21098448004DAE93 /* TOCropViewConstants.h in Headers */,
-				144B8CD31D22CD650085D774 /* TOCroppedImageAttributes.h in Headers */,
+				144B8CD31D22CD650085D774 /* CTOCroppedImageAttributes.h in Headers */,
 				144B8CD61D22CD650085D774 /* TOCropScrollView.h in Headers */,
 				144B8CD51D22CD650085D774 /* TOCropOverlayView.h in Headers */,
 			);
@@ -507,7 +507,7 @@
 				220C8EB12106344D00A9B25D /* UIImage+CropRotate.h in Headers */,
 				04262D9C20F6FC4600024177 /* CTOCropViewControllerTransitioning.h in Headers */,
 				04262D9D20F6FC4600024177 /* CTOActivityCroppedImageProvider.h in Headers */,
-				04262D9E20F6FC4600024177 /* TOCroppedImageAttributes.h in Headers */,
+				04262D9E20F6FC4600024177 /* CTOCroppedImageAttributes.h in Headers */,
 				04262DA020F6FC4600024177 /* TOCropOverlayView.h in Headers */,
 				04262DA120F6FC4600024177 /* TOCropScrollView.h in Headers */,
 			);
@@ -778,7 +778,7 @@
 				220C8EAD2106344D00A9B25D /* UIImage+CropRotate.m in Sources */,
 				144B8CDA1D22CD730085D774 /* CTOCropViewControllerTransitioning.m in Sources */,
 				144B8CDB1D22CD730085D774 /* CTOActivityCroppedImageProvider.m in Sources */,
-				144B8CDC1D22CD730085D774 /* TOCroppedImageAttributes.m in Sources */,
+				144B8CDC1D22CD730085D774 /* CTOCroppedImageAttributes.m in Sources */,
 				144B8CDE1D22CD730085D774 /* TOCropOverlayView.m in Sources */,
 				144B8CDF1D22CD730085D774 /* TOCropScrollView.m in Sources */,
 				144B8CE01D22CD730085D774 /* TOCropToolbar.m in Sources */,
@@ -801,7 +801,7 @@
 			files = (
 				22DB4D9B1B234D07008B8466 /* TOCropView.m in Sources */,
 				223424761ABBC0CD00BBC2B1 /* ViewController.m in Sources */,
-				22BF96201B2CD017009F4785 /* TOCroppedImageAttributes.m in Sources */,
+				22BF96201B2CD017009F4785 /* CTOCroppedImageAttributes.m in Sources */,
 				22DB4D9A1B234D07008B8466 /* TOCropToolbar.m in Sources */,
 				223424731ABBC0CD00BBC2B1 /* AppDelegate.m in Sources */,
 				223424701ABBC0CD00BBC2B1 /* main.m in Sources */,
@@ -820,7 +820,7 @@
 			files = (
 				22B68F951FFB380700601B1A /* CTOCropViewControllerTransitioning.m in Sources */,
 				22B68F961FFB380700601B1A /* CTOActivityCroppedImageProvider.m in Sources */,
-				22B68F971FFB380700601B1A /* TOCroppedImageAttributes.m in Sources */,
+				22B68F971FFB380700601B1A /* CTOCroppedImageAttributes.m in Sources */,
 				22B68F991FFB380700601B1A /* TOCropOverlayView.m in Sources */,
 				22B68F9A1FFB380700601B1A /* TOCropScrollView.m in Sources */,
 				22B68F9B1FFB380700601B1A /* TOCropToolbar.m in Sources */,
@@ -840,7 +840,7 @@
 				220C8EAC2106344D00A9B25D /* UIImage+CropRotate.m in Sources */,
 				22B68F9F1FFB3C0800601B1A /* CTOCropViewControllerTransitioning.m in Sources */,
 				22B68FA01FFB3C0800601B1A /* CTOActivityCroppedImageProvider.m in Sources */,
-				22B68FA11FFB3C0800601B1A /* TOCroppedImageAttributes.m in Sources */,
+				22B68FA11FFB3C0800601B1A /* CTOCroppedImageAttributes.m in Sources */,
 				22B68FA31FFB3C0800601B1A /* TOCropOverlayView.m in Sources */,
 				22B68FA41FFB3C0800601B1A /* TOCropScrollView.m in Sources */,
 				22B68FA51FFB3C0800601B1A /* TOCropToolbar.m in Sources */,
@@ -863,7 +863,7 @@
 				2F5062F11F53E31F00AA9F14 /* TOCropToolbar.m in Sources */,
 				2F5062F01F53E31F00AA9F14 /* TOCropScrollView.m in Sources */,
 				2F5062EB1F53E31F00AA9F14 /* CTOCropViewControllerTransitioning.m in Sources */,
-				2F5062ED1F53E31F00AA9F14 /* TOCroppedImageAttributes.m in Sources */,
+				2F5062ED1F53E31F00AA9F14 /* CTOCroppedImageAttributes.m in Sources */,
 				220C8EB02106344D00A9B25D /* UIImage+CropRotate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

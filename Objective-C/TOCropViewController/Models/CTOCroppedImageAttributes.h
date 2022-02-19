@@ -1,5 +1,5 @@
 //
-//  TOCroppedImageAttributes.h
+//  CTOCroppedImageAttributes.h
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -25,7 +25,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TOCroppedImageAttributes : NSObject
+@interface CTOCroppedImageAttributes : NSObject
 
 @property (nonatomic, readonly) NSInteger angle;
 @property (nonatomic, readonly) CGRect croppedFrame;
