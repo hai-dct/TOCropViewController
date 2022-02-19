@@ -33,7 +33,7 @@ static const CGFloat kTOMaximumZoomScale = 15.0f;
 
 /* When the user taps down to resize the box, this state is used
  to determine where they tapped and how to manipulate the box */
-typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
+typedef NS_ENUM(NSInteger, CTOCropViewOverlayEdge) {
     TOCropViewOverlayEdgeNone,
     TOCropViewOverlayEdgeTopLeft,
     TOCropViewOverlayEdgeTop,
@@ -66,7 +66,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
 
 /* Crop box handling */
 @property (nonatomic, assign) BOOL applyInitialCroppedImageFrame; /* No by default, when setting initialCroppedImageFrame this will be set to YES, and set back to NO after first application - so it's only done once */
-@property (nonatomic, assign) TOCropViewOverlayEdge tappedEdge; /* The edge region that the user tapped on, to resize the cropping region */
+@property (nonatomic, assign) CTOCropViewOverlayEdge tappedEdge; /* The edge region that the user tapped on, to resize the cropping region */
 @property (nonatomic, assign) CGRect cropOriginFrame;     /* When resizing, this is the original frame of the crop box. */
 @property (nonatomic, assign) CGPoint panOriginPoint;     /* The initial touch point of the pan gesture recognizer */
 @property (nonatomic, assign, readwrite) CGRect cropBoxFrame;  /* The frame, in relation to to this view where the grid, and crop container view are aligned */
@@ -867,7 +867,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
     self.resetTimer = nil;
 }
 
-- (TOCropViewOverlayEdge)cropEdgeForPoint:(CGPoint)point
+- (CTOCropViewOverlayEdge)cropEdgeForPoint:(CGPoint)point
 {
     CGRect frame = self.cropBoxFrame;
     
