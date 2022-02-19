@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-#import "TOCropViewController.h"
+#import "CTOCropViewController.h"
 
 @interface TOCropViewControllerTests : XCTestCase
 
@@ -25,7 +25,7 @@
     UIGraphicsEndImageContext();
     
     //Perform test
-    TOCropViewController *controller = [[TOCropViewController alloc] initWithImage:image];
+    CTOCropViewController *controller = [[CTOCropViewController alloc] initWithImage:image];
     UIView *view = controller.view;
     XCTAssertNotNil(view);
 }

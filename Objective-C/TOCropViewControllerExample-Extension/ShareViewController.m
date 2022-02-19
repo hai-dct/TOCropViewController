@@ -1,6 +1,6 @@
 //
 //  ShareViewController.m
-//  TOCropViewController-ShareExtension
+//  CTOCropViewController-ShareExtension
 //
 //  Created by Shardul Patel on 27/08/17.
 //  Copyright © 2017 Tim Oliver. All rights reserved.

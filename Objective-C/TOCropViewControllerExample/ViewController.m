@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "TOCropViewController.h"
+#import "CTOCropViewController.h"
 
 @interface ViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, TOCropViewControllerDelegate>
 
@@ -26,7 +26,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
     UIImage *image = info[UIImagePickerControllerOriginalImage];
-    TOCropViewController *cropController = [[TOCropViewController alloc] initWithCroppingStyle:self.croppingStyle image:image];
+    CTOCropViewController *cropController = [[CTOCropViewController alloc] initWithCroppingStyle:self.croppingStyle image:image];
     cropController.delegate = self;
 
     // Uncomment this if you wish to provide extra instructions via a title label
@@ -98,7 +98,7 @@
 - (void)didTapImageView
 {
     // When tapping the image view, restore the image to the previous cropping state
-    TOCropViewController *cropController = [[TOCropViewController alloc] initWithCroppingStyle:self.croppingStyle image:self.image];
+    CTOCropViewController *cropController = [[CTOCropViewController alloc] initWithCroppingStyle:self.croppingStyle image:self.image];
     cropController.delegate = self;
     CGRect viewFrame = [self.view convertRect:self.imageView.frame toView:self.navigationController.view];
     [cropController presentAnimatedFromParentViewController:self
@@ -112,21 +112,21 @@
 }
 
 #pragma mark - Cropper Delegate -
-- (void)cropViewController:(TOCropViewController *)cropViewController didCropToImage:(UIImage *)image withRect:(CGRect)cropRect angle:(NSInteger)angle
+- (void)cropViewController:(CTOCropViewController *)cropViewController didCropToImage:(UIImage *)image withRect:(CGRect)cropRect angle:(NSInteger)angle
 {
     self.croppedFrame = cropRect;
     self.angle = angle;
     [self updateImageViewWithImage:image fromCropViewController:cropViewController];
 }
 
-- (void)cropViewController:(TOCropViewController *)cropViewController didCropToCircularImage:(UIImage *)image withRect:(CGRect)cropRect angle:(NSInteger)angle
+- (void)cropViewController:(CTOCropViewController *)cropViewController didCropToCircularImage:(UIImage *)image withRect:(CGRect)cropRect angle:(NSInteger)angle
 {
     self.croppedFrame = cropRect;
     self.angle = angle;
     [self updateImageViewWithImage:image fromCropViewController:cropViewController];
 }
 
-- (void)updateImageViewWithImage:(UIImage *)image fromCropViewController:(TOCropViewController *)cropViewController
+- (void)updateImageViewWithImage:(UIImage *)image fromCropViewController:(CTOCropViewController *)cropViewController
 {
     self.imageView.image = image;
     [self layoutImageView];

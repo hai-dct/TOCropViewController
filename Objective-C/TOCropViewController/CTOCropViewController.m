@@ -1,5 +1,5 @@
 //
-//  TOCropViewController.m
+//  CTOCropViewController.m
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -20,7 +20,7 @@
 //  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "TOCropViewController.h"
+#import "CTOCropViewController.h"
 
 #import "TOCropViewControllerTransitioning.h"
 #import "TOActivityCroppedImageProvider.h"
@@ -30,7 +30,7 @@
 static const CGFloat kTOCropViewControllerTitleTopPadding = 14.0f;
 static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 
-@interface TOCropViewController () <UIActionSheetDelegate, UIViewControllerTransitioningDelegate, TOCropViewDelegate>
+@interface CTOCropViewController () <UIActionSheetDelegate, UIViewControllerTransitioningDelegate, TOCropViewDelegate>
 
 /* The target image */
 @property (nonatomic, readwrite) UIImage *image;
@@ -69,7 +69,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 
 @end
 
-@implementation TOCropViewController
+@implementation CTOCropViewController
 
 - (instancetype)initWithCroppingStyle:(TOCropViewCroppingStyle)style image:(UIImage *)image
 {

@@ -1,5 +1,5 @@
 //
-//  TOCropViewController.h
+//  CTOCropViewController.h
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -26,7 +26,7 @@
 #import "TOCropView.h"
 #import "TOCropToolbar.h"
 
-@class TOCropViewController;
+@class CTOCropViewController;
 
 ///------------------------------------------------
 /// @name Delegate
@@ -42,7 +42,7 @@
  @param cropRect A rectangle indicating the crop region of the image the user chose (In the original image's local co-ordinate space)
  @param angle The angle of the image when it was cropped
  */
-- (void)cropViewController:(nonnull TOCropViewController *)cropViewController
+- (void)cropViewController:(nonnull CTOCropViewController *)cropViewController
         didCropImageToRect:(CGRect)cropRect
                      angle:(NSInteger)angle;
 
@@ -54,7 +54,7 @@
  @param cropRect A rectangle indicating the crop region of the image the user chose (In the original image's local co-ordinate space)
  @param angle The angle of the image when it was cropped
  */
-- (void)cropViewController:(nonnull TOCropViewController *)cropViewController
+- (void)cropViewController:(nonnull CTOCropViewController *)cropViewController
             didCropToImage:(nonnull UIImage *)image withRect:(CGRect)cropRect
                      angle:(NSInteger)angle;
 
@@ -66,7 +66,7 @@
  @param cropRect A rectangle indicating the crop region of the image the user chose (In the original image's local co-ordinate space)
  @param angle The angle of the image when it was cropped
  */
-- (void)cropViewController:(nonnull TOCropViewController *)cropViewController
+- (void)cropViewController:(nonnull CTOCropViewController *)cropViewController
     didCropToCircularImage:(nonnull UIImage *)image withRect:(CGRect)cropRect
                      angle:(NSInteger)angle;
 
@@ -78,12 +78,12 @@
  @param cancelled Whether a cropping action was actually performed, or if the user explicitly hit 'Cancel'
  
  */
-- (void)cropViewController:(nonnull TOCropViewController *)cropViewController
+- (void)cropViewController:(nonnull CTOCropViewController *)cropViewController
         didFinishCancelled:(BOOL)cancelled;
 
 @end
 
-@interface TOCropViewController : UIViewController
+@interface CTOCropViewController : UIViewController
 
 /**
  The original, uncropped image that was passed to this controller.
@@ -377,7 +377,7 @@
 - (void)commitCurrentCrop;
 
 /**
- Resets object of TOCropViewController class as if user pressed reset button in the bottom bar themself
+ Resets object of CTOCropViewController class as if user pressed reset button in the bottom bar themself
  */
 - (void)resetCropViewLayout;
 
