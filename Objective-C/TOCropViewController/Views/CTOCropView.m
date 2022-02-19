@@ -48,7 +48,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
 @interface CTOCropView () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong, readwrite) UIImage *image;
-@property (nonatomic, assign, readwrite) TOCropViewCroppingStyle croppingStyle;
+@property (nonatomic, assign, readwrite) CTOCropViewCroppingStyle croppingStyle;
 
 /* Views */
 @property (nonatomic, strong) UIImageView *backgroundImageView;     /* The main image view, placed within the scroll view */
@@ -117,7 +117,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
     return [self initWithCroppingStyle:TOCropViewCroppingStyleDefault image:image];
 }
 
-- (instancetype)initWithCroppingStyle:(TOCropViewCroppingStyle)style image:(UIImage *)image
+- (instancetype)initWithCroppingStyle:(CTOCropViewCroppingStyle)style image:(UIImage *)image
 {
     if (self = [super init]) {
         _image = image;

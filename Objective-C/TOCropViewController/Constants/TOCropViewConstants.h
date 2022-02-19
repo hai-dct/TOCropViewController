@@ -25,7 +25,7 @@
 /**
  The shape of the cropping region of this crop view controller
  */
-typedef NS_ENUM(NSInteger, TOCropViewCroppingStyle) {
+typedef NS_ENUM(NSInteger, CTOCropViewCroppingStyle) {
     TOCropViewCroppingStyleDefault,     // The regular, rectangular crop box
     TOCropViewCroppingStyleCircular     // A fixed, circular crop box
 };

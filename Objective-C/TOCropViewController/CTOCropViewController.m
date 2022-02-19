@@ -36,7 +36,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 @property (nonatomic, readwrite) UIImage *image;
 
 /* The cropping style of the crop view */
-@property (nonatomic, assign, readwrite) TOCropViewCroppingStyle croppingStyle;
+@property (nonatomic, assign, readwrite) CTOCropViewCroppingStyle croppingStyle;
 
 /* Views */
 @property (nonatomic, strong) CTOCropToolbar *toolbar;
@@ -71,7 +71,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 
 @implementation CTOCropViewController
 
-- (instancetype)initWithCroppingStyle:(TOCropViewCroppingStyle)style image:(UIImage *)image
+- (instancetype)initWithCroppingStyle:(CTOCropViewCroppingStyle)style image:(UIImage *)image
 {
     NSParameterAssert(image);
 
