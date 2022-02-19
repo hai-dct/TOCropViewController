@@ -1,5 +1,5 @@
 //
-//  TOActivityCroppedImageProvider.h
+//  CTOActivityCroppedImageProvider.h
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -24,7 +24,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TOActivityCroppedImageProvider : UIActivityItemProvider
+@interface CTOActivityCroppedImageProvider : UIActivityItemProvider
 
 @property (nonnull, nonatomic, readonly) UIImage *image;
 @property (nonatomic, readonly) CGRect cropFrame;

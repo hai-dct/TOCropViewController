@@ -288,7 +288,7 @@
 /** 
  If `showActivitySheetOnDone` is true, then these activity items will 
  be supplied to that UIActivityViewController in addition to the 
- `TOActivityCroppedImageProvider` object.
+ `CTOActivityCroppedImageProvider` object.
  */
 @property (nullable, nonatomic, strong) NSArray *activityItems;
 
@@ -296,7 +296,7 @@
  If `showActivitySheetOnDone` is true, then you may specify any 
  custom activities your app implements in this array. If your activity requires 
  access to the cropping information, it can be accessed in the supplied 
- `TOActivityCroppedImageProvider` object
+ `CTOActivityCroppedImageProvider` object
  */
 @property (nullable, nonatomic, strong) NSArray<UIActivity *> *applicationActivities;
 

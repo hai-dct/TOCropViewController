@@ -1,5 +1,5 @@
 //
-//  TOActivityCroppedImageProvider.m
+//  CTOActivityCroppedImageProvider.m
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -20,10 +20,10 @@
 //  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "TOActivityCroppedImageProvider.h"
+#import "CTOActivityCroppedImageProvider.h"
 #import "UIImage+CropRotate.h"
 
-@interface TOActivityCroppedImageProvider ()
+@interface CTOActivityCroppedImageProvider ()
 
 @property (nonatomic, strong, readwrite) UIImage *image;
 @property (nonatomic, assign, readwrite) CGRect cropFrame;
@@ -34,7 +34,7 @@
 
 @end
 
-@implementation TOActivityCroppedImageProvider
+@implementation CTOActivityCroppedImageProvider
 
 - (instancetype)initWithImage:(UIImage *)image cropFrame:(CGRect)cropFrame angle:(NSInteger)angle circular:(BOOL)circular
 {
