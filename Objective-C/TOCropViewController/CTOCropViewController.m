@@ -40,7 +40,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 
 /* Views */
 @property (nonatomic, strong) CTOCropToolbar *toolbar;
-@property (nonatomic, strong, readwrite) TOCropView *cropView;
+@property (nonatomic, strong, readwrite) CTOCropView *cropView;
 @property (nonatomic, strong) UIView *toolbarSnapshotView;
 @property (nonatomic, strong, readwrite) UILabel *titleLabel;
 
@@ -695,12 +695,12 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 }
 
 #pragma mark - Crop View Delegates -
-- (void)cropViewDidBecomeResettable:(TOCropView *)cropView
+- (void)cropViewDidBecomeResettable:(CTOCropView *)cropView
 {
     self.toolbar.resetButtonEnabled = YES;
 }
 
-- (void)cropViewDidBecomeNonResettable:(TOCropView *)cropView
+- (void)cropViewDidBecomeNonResettable:(CTOCropView *)cropView
 {
     self.toolbar.resetButtonEnabled = NO;
 }
@@ -1069,12 +1069,12 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     self.toolbar.cancelButtonColor = color;
 }
 
-- (TOCropView *)cropView
+- (CTOCropView *)cropView
 {
     // Lazily create the crop view in case we try and access it before presentation, but
     // don't add it until our parent view controller view has loaded at the right time
     if (!_cropView) {
-        _cropView = [[TOCropView alloc] initWithCroppingStyle:self.croppingStyle image:self.image];
+        _cropView = [[CTOCropView alloc] initWithCroppingStyle:self.croppingStyle image:self.image];
         _cropView.delegate = self;
         _cropView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self.view addSubview:_cropView];

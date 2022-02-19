@@ -23,7 +23,7 @@
 #import <UIKit/UIKit.h>
 
 #import "CTOCropViewController.h"
-#import "TOCropView.h"
+#import "CTOCropView.h"
 #import "CTOCropToolbar.h"
 #import "TOCropViewConstants.h"
 #import "UIImage+CropRotate.h"

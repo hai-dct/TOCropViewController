@@ -23,7 +23,7 @@
 #import <UIKit/UIKit.h>
 
 #import "TOCropViewConstants.h"
-#import "TOCropView.h"
+#import "CTOCropView.h"
 #import "CTOCropToolbar.h"
 
 @class CTOCropViewController;
@@ -111,7 +111,7 @@
 /**
  The crop view managed by this view controller.
  */
-@property (nonnull, nonatomic, strong, readonly) TOCropView *cropView;
+@property (nonnull, nonatomic, strong, readonly) CTOCropView *cropView;
 
 /** 
  In the coordinate space of the image itself, the region that is currently

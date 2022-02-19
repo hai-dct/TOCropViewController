@@ -1,5 +1,5 @@
 //
-//  TOCropView.h
+//  CTOCropView.h
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -24,18 +24,18 @@
 #import "TOCropViewConstants.h"
 
 @class CTOCropOverlayView;
-@class TOCropView;
+@class CTOCropView;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol TOCropViewDelegate<NSObject>
 
-- (void)cropViewDidBecomeResettable:(nonnull TOCropView *)cropView;
-- (void)cropViewDidBecomeNonResettable:(nonnull TOCropView *)cropView;
+- (void)cropViewDidBecomeResettable:(nonnull CTOCropView *)cropView;
+- (void)cropViewDidBecomeNonResettable:(nonnull CTOCropView *)cropView;
 
 @end
 
-@interface TOCropView : UIView
+@interface CTOCropView : UIView
 
 /**
  The image that the crop view is displaying. This cannot be changed once the crop view is instantiated.

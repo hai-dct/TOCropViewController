@@ -1,5 +1,5 @@
 //
-//  TOCropView.m
+//  CTOCropView.m
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -20,7 +20,7 @@
 //  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "TOCropView.h"
+#import "CTOCropView.h"
 #import "CTOCropOverlayView.h"
 #import "CTOCropScrollView.h"
 
@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
     TOCropViewOverlayEdgeLeft
 };
 
-@interface TOCropView () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
+@interface CTOCropView () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong, readwrite) UIImage *image;
 @property (nonatomic, assign, readwrite) TOCropViewCroppingStyle croppingStyle;
@@ -110,7 +110,7 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
 
 @end
 
-@implementation TOCropView
+@implementation CTOCropView
 
 - (instancetype)initWithImage:(UIImage *)image
 {
