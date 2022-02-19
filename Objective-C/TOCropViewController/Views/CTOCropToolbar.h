@@ -21,7 +21,7 @@
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
-#import "TOCropViewConstants.h"
+#import "CTOCropViewConstants.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

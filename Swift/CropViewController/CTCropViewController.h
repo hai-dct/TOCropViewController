@@ -25,7 +25,7 @@
 #import "CTOCropViewController.h"
 #import "CTOCropView.h"
 #import "CTOCropToolbar.h"
-#import "TOCropViewConstants.h"
+#import "CTOCropViewConstants.h"
 #import "UIImage+CropRotate.h"
 
 FOUNDATION_EXPORT double CropViewControllerVersionNumber;

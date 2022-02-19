@@ -21,7 +21,7 @@ class ViewController: UIViewController, CropViewControllerDelegate, UIImagePicke
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = (info[UIImagePickerController.InfoKey.originalImage] as? UIImage) else { return }
         
-        let cropController = CropViewController(croppingStyle: croppingStyle, image: image)
+        let cropController = CTCropViewController(croppingStyle: croppingStyle, image: image)
         //cropController.modalPresentationStyle = .fullScreen
         cropController.delegate = self
         
@@ -75,19 +75,19 @@ class ViewController: UIViewController, CropViewControllerDelegate, UIImagePicke
         }
     }
     
-    public func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+    public func cropViewController(_ cropViewController: CTCropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
         self.croppedRect = cropRect
         self.croppedAngle = angle
         updateImageViewWithImage(image, fromCropViewController: cropViewController)
     }
     
-    public func cropViewController(_ cropViewController: CropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+    public func cropViewController(_ cropViewController: CTCropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
         self.croppedRect = cropRect
         self.croppedAngle = angle
         updateImageViewWithImage(image, fromCropViewController: cropViewController)
     }
     
-    public func updateImageViewWithImage(_ image: UIImage, fromCropViewController cropViewController: CropViewController) {
+    public func updateImageViewWithImage(_ image: UIImage, fromCropViewController cropViewController: CTCropViewController) {
         imageView.image = image
         layoutImageView()
         
@@ -170,7 +170,7 @@ class ViewController: UIViewController, CropViewControllerDelegate, UIImagePicke
     
     @objc public func didTapImageView() {
         // When tapping the image view, restore the image to the previous cropping state
-        let cropViewController = CropViewController(croppingStyle: self.croppingStyle, image: self.image!)
+        let cropViewController = CTCropViewController(croppingStyle: self.croppingStyle, image: self.image!)
         cropViewController.delegate = self
         let viewFrame = view.convert(imageView.frame, to: navigationController!.view)
         

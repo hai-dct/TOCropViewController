@@ -1,5 +1,5 @@
 //
-//  CropViewController.swift
+//  CTCropViewController.swift
 //
 //  Copyright 2017-2022 Timothy Oliver. All rights reserved.
 //
@@ -20,24 +20,24 @@
 //  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#if canImport(TOCropViewController)
-import TOCropViewController
+#if canImport(CTOCropViewController)
+import CTOCropViewController
 #endif
 
 /**
  An enum containing all of the aspect ratio presets that this view controller supports
  */
-public typealias CropViewControllerAspectRatioPreset = TOCropViewControllerAspectRatioPreset
+public typealias CropViewControllerAspectRatioPreset = CTOCropViewControllerAspectRatioPreset
 
 /**
  An enum denoting whether the control tool bar is drawn at the top, or the bottom of the screen in portrait mode
  */
-public typealias CropViewControllerToolbarPosition = TOCropViewControllerToolbarPosition
+public typealias CropViewControllerToolbarPosition = CTOCropViewControllerToolbarPosition
 
 /**
  The type of cropping style for this view controller (ie a square or a circle cropping region)
  */
-public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
+public typealias CropViewCroppingStyle = CTOCropViewCroppingStyle
 
 // ------------------------------------------------
 /// @name Delegate
@@ -51,7 +51,7 @@ public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
      @param cropRect A rectangle indicating the crop region of the image the user chose (In the original image's local co-ordinate space)
      @param angle The angle of the image when it was cropped
      */
-    @objc optional func cropViewController(_ cropViewController: CropViewController, didCropImageToRect cropRect: CGRect, angle: Int)
+    @objc optional func cropViewController(_ cropViewController: CTCropViewController, didCropImageToRect cropRect: CGRect, angle: Int)
     
     /**
      Called when the user has committed the crop action, and provides
@@ -61,7 +61,7 @@ public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
      @param cropRect A rectangle indicating the crop region of the image the user chose (In the original image's local co-ordinate space)
      @param angle The angle of the image when it was cropped
      */
-    @objc optional func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int)
+    @objc optional func cropViewController(_ cropViewController: CTCropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int)
     
     /**
      If the cropping style is set to circular, implementing this delegate will return a circle-cropped version of the selected
@@ -71,7 +71,7 @@ public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
      @param cropRect A rectangle indicating the crop region of the image the user chose (In the original image's local co-ordinate space)
      @param angle The angle of the image when it was cropped
      */
-    @objc optional func cropViewController(_ cropViewController: CropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int)
+    @objc optional func cropViewController(_ cropViewController: CTCropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int)
     
     /**
      If implemented, when the user hits cancel, or completes a
@@ -81,14 +81,14 @@ public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
      @param cancelled Whether a cropping action was actually performed, or if the user explicitly hit 'Cancel'
      
      */
-    @objc optional func cropViewController(_ cropViewController: CropViewController, didFinishCancelled cancelled: Bool)
+    @objc optional func cropViewController(_ cropViewController: CTCropViewController, didFinishCancelled cancelled: Bool)
 }
 
 // ------------------------------------------------
 /// @name Class
 // ------------------------------------------------
 
-open class CropViewController: UIViewController, TOCropViewControllerDelegate {
+open class CTCropViewController: UIViewController, CTOCropViewControllerDelegate {
     
     /**
      The original, uncropped image that was passed to this controller.
@@ -371,14 +371,14 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
     /**
      The crop view managed by this view controller.
      */
-    public var cropView: TOCropView {
+    public var cropView: CTOCropView {
         return toCropViewController.cropView
     }
     
     /**
      The toolbar managed by this view controller.
      */
-    public var toolbar: TOCropToolbar {
+    public var toolbar: CTOCropToolbar {
         return toCropViewController.toolbar
     }
 
@@ -440,7 +440,7 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
      This class internally manages and abstracts access to a `TOCropViewController` instance
      :nodoc:
      */
-    internal let toCropViewController: TOCropViewController!
+    internal let toCropViewController: CTOCropViewController!
     
     /**
      Forward status bar status style changes to the crop view controller
@@ -484,7 +484,7 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
      @param image The image that will be used to crop.
      */
     public init(image: UIImage) {
-        self.toCropViewController = TOCropViewController(image: image)
+        self.toCropViewController = CTOCropViewController(image: image)
         super.init(nibName: nil, bundle: nil)
         setUpCropController()
     }
@@ -496,7 +496,7 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
      @param image The image that will be cropped
      */
     public init(croppingStyle: CropViewCroppingStyle, image: UIImage) {
-        self.toCropViewController = TOCropViewController(croppingStyle: croppingStyle, image: image)
+        self.toCropViewController = CTOCropViewController(croppingStyle: croppingStyle, image: image)
         super.init(nibName: nil, bundle: nil)
         setUpCropController()
     }
@@ -623,7 +623,7 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
     }
 }
 
-extension CropViewController {
+extension CTCropViewController {
     fileprivate func setUpCropController() {
         modalPresentationStyle = .fullScreen
         addChild(toCropViewController)

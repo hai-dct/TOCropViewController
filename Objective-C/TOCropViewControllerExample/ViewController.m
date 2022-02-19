@@ -37,18 +37,18 @@
     //cropController.imageCropFrame = CGRectMake(0,0,2848,4288); //The initial frame that the crop controller will have visible.
     
     // -- Uncomment the following lines of code to test out the aspect ratio features --
-    //cropController.aspectRatioPreset = TOCropViewControllerAspectRatioPresetSquare; //Set the initial aspect ratio as a square
+    //cropController.aspectRatioPreset = CTOCropViewControllerAspectRatioPresetSquare; //Set the initial aspect ratio as a square
     //cropController.aspectRatioLockEnabled = YES; // The crop box is locked to the aspect ratio and can't be resized away from it
     //cropController.resetAspectRatioEnabled = NO; // When tapping 'reset', the aspect ratio will NOT be reset back to default
     //cropController.aspectRatioPickerButtonHidden = YES;
 
     // -- Uncomment this line of code to place the toolbar at the top of the view controller --
-    //cropController.toolbarPosition = TOCropViewControllerToolbarPositionTop;
+    //cropController.toolbarPosition = CTOCropViewControllerToolbarPositionTop;
     
     // -- Uncomment this line of code to include only certain type of preset ratios
-    //cropController.allowedAspectRatios = @[@(TOCropViewControllerAspectRatioPresetOriginal),
-    //                                       @(TOCropViewControllerAspectRatioPresetSquare),
-    //                                       @(TOCropViewControllerAspectRatioPreset3x2)];
+    //cropController.allowedAspectRatios = @[@(CTOCropViewControllerAspectRatioPresetOriginal),
+    //                                       @(CTOCropViewControllerAspectRatioPresetSquare),
+    //                                       @(CTOCropViewControllerAspectRatioPreset3x2)];
 
     //cropController.rotateButtonsHidden = YES;
     //cropController.rotateClockwiseButtonHidden = NO;
@@ -72,7 +72,7 @@
     self.image = image;
     
     //If profile picture, push onto the same navigation stack
-    if (self.croppingStyle == TOCropViewCroppingStyleCircular) {
+    if (self.croppingStyle == CTOCropViewCroppingStyleCircular) {
         if (picker.sourceType == UIImagePickerControllerSourceTypeCamera) {
             [picker dismissViewControllerAnimated:YES completion:^{
                 [self presentViewController:cropController animated:YES completion:nil];
@@ -133,7 +133,7 @@
     
     self.navigationItem.rightBarButtonItem.enabled = YES;
     
-    if (cropViewController.croppingStyle != TOCropViewCroppingStyleCircular) {
+    if (cropViewController.croppingStyle != CTOCropViewCroppingStyleCircular) {
         self.imageView.hidden = YES;
         [cropViewController dismissAnimatedFromParentViewController:self
                                                    withCroppedImage:image
@@ -189,7 +189,7 @@
     UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Crop Image", @"")
                                              style:UIAlertActionStyleDefault
                                            handler:^(UIAlertAction *action) {
-                                               self.croppingStyle = TOCropViewCroppingStyleDefault;
+                                               self.croppingStyle = CTOCropViewCroppingStyleDefault;
                                                
                                                UIImagePickerController *standardPicker = [[UIImagePickerController alloc] init];
                                                standardPicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
@@ -201,7 +201,7 @@
     UIAlertAction *profileAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Make Profile Picture", @"")
                                            style:UIAlertActionStyleDefault
                                          handler:^(UIAlertAction *action) {
-                                             self.croppingStyle = TOCropViewCroppingStyleCircular;
+                                             self.croppingStyle = CTOCropViewCroppingStyleCircular;
                                              
                                              UIImagePickerController *profilePicker = [[UIImagePickerController alloc] init];
                                              profilePicker.modalPresentationStyle = UIModalPresentationPopover;

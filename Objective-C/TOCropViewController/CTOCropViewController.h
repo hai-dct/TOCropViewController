@@ -22,7 +22,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "TOCropViewConstants.h"
+#import "CTOCropViewConstants.h"
 #import "CTOCropView.h"
 #import "CTOCropToolbar.h"
 
@@ -144,7 +144,7 @@
 /**
  A choice from one of the pre-defined aspect ratio presets
  */
-@property (nonatomic, assign) TOCropViewControllerAspectRatioPreset aspectRatioPreset;
+@property (nonatomic, assign) CTOCropViewControllerAspectRatioPreset aspectRatioPreset;
 
 /**
  A CGSize value representing a custom aspect ratio, not listed in the presets.
@@ -233,7 +233,7 @@
 /**
  The position of the Toolbar the default value is `TOCropViewControllerToolbarPositionBottom`.
  */
-@property (nonatomic, assign) TOCropViewControllerToolbarPosition toolbarPosition;
+@property (nonatomic, assign) CTOCropViewControllerToolbarPosition toolbarPosition;
 
 /**
  When disabled, an additional rotation button that rotates the canvas in 
@@ -388,7 +388,7 @@
  @param aspectRatioPreset The aspect ratio preset
  @param animated Whether the transition to the aspect ratio is animated
  */
-- (void)setAspectRatioPreset:(TOCropViewControllerAspectRatioPreset)aspectRatioPreset animated:(BOOL)animated NS_SWIFT_NAME(setAspectRatioPreset(_:animated:));
+- (void)setAspectRatioPreset:(CTOCropViewControllerAspectRatioPreset)aspectRatioPreset animated:(BOOL)animated NS_SWIFT_NAME(setAspectRatioPreset(_:animated:));
 
 /**
  Play a custom animation of the target image zooming to its position in

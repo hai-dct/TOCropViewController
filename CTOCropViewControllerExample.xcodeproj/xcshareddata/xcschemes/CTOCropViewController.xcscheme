@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "144B8CC81D22CAFF0085D774"
                BuildableName = "TOCropViewController.framework"
-               BlueprintName = "TOCropViewController"
-               ReferencedContainer = "container:TOCropViewControllerExample.xcodeproj">
+               BlueprintName = "CTOCropViewController"
+               ReferencedContainer = "container:CTOCropViewControllerExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,8 +45,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "144B8CC81D22CAFF0085D774"
             BuildableName = "TOCropViewController.framework"
-            BlueprintName = "TOCropViewController"
-            ReferencedContainer = "container:TOCropViewControllerExample.xcodeproj">
+            BlueprintName = "CTOCropViewController"
+            ReferencedContainer = "container:CTOCropViewControllerExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -61,8 +61,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "144B8CC81D22CAFF0085D774"
             BuildableName = "TOCropViewController.framework"
-            BlueprintName = "TOCropViewController"
-            ReferencedContainer = "container:TOCropViewControllerExample.xcodeproj">
+            BlueprintName = "CTOCropViewController"
+            ReferencedContainer = "container:CTOCropViewControllerExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

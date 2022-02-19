@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2238CF1F1FC0269C0081B957"
-               BuildableName = "CropViewControllerExample.app"
-               BlueprintName = "CropViewControllerExample"
-               ReferencedContainer = "container:TOCropViewControllerExample.xcodeproj">
+               BlueprintIdentifier = "2238CF3B1FC029A90081B957"
+               BuildableName = "CropViewController.framework"
+               BlueprintName = "CTCropViewController"
+               ReferencedContainer = "container:CTOCropViewControllerExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,15 +27,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2238CF1F1FC0269C0081B957"
-            BuildableName = "CropViewControllerExample.app"
-            BlueprintName = "CropViewControllerExample"
-            ReferencedContainer = "container:TOCropViewControllerExample.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <Testables>
       </Testables>
    </TestAction>
@@ -43,24 +34,21 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = "IDELaunchSchemeLanguageRightToLeftLayoutDirection"
-      region = "IR"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2238CF1F1FC0269C0081B957"
-            BuildableName = "CropViewControllerExample.app"
-            BlueprintName = "CropViewControllerExample"
-            ReferencedContainer = "container:TOCropViewControllerExample.xcodeproj">
+            BlueprintIdentifier = "2238CF3B1FC029A90081B957"
+            BuildableName = "CropViewController.framework"
+            BlueprintName = "CTCropViewController"
+            ReferencedContainer = "container:CTOCropViewControllerExample.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -68,16 +56,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2238CF1F1FC0269C0081B957"
-            BuildableName = "CropViewControllerExample.app"
-            BlueprintName = "CropViewControllerExample"
-            ReferencedContainer = "container:TOCropViewControllerExample.xcodeproj">
+            BlueprintIdentifier = "2238CF3B1FC029A90081B957"
+            BuildableName = "CropViewController.framework"
+            BlueprintName = "CTCropViewController"
+            ReferencedContainer = "container:CTOCropViewControllerExample.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

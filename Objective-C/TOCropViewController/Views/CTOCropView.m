@@ -114,7 +114,7 @@ typedef NS_ENUM(NSInteger, CTOCropViewOverlayEdge) {
 
 - (instancetype)initWithImage:(UIImage *)image
 {
-    return [self initWithCroppingStyle:TOCropViewCroppingStyleDefault image:image];
+    return [self initWithCroppingStyle:CTOCropViewCroppingStyleDefault image:image];
 }
 
 - (instancetype)initWithCroppingStyle:(CTOCropViewCroppingStyle)style image:(UIImage *)image
@@ -132,7 +132,7 @@ typedef NS_ENUM(NSInteger, CTOCropViewOverlayEdge) {
 {
     __weak typeof(self) weakSelf = self;
     
-    BOOL circularMode = (self.croppingStyle == TOCropViewCroppingStyleCircular);
+    BOOL circularMode = (self.croppingStyle == CTOCropViewCroppingStyleCircular);
     
     //View properties
     self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
@@ -1009,7 +1009,7 @@ typedef NS_ENUM(NSInteger, CTOCropViewOverlayEdge) {
     self.gridOverlayView.frame = _cropBoxFrame; //set the new overlay view to match the same region
     
     // If the mask layer is present, adjust its transform to fit the new container view size
-    if (self.croppingStyle == TOCropViewCroppingStyleCircular) {
+    if (self.croppingStyle == CTOCropViewCroppingStyleCircular) {
         CGFloat halfWidth = self.foregroundContainerView.frame.size.width * 0.5f;
         self.foregroundContainerView.layer.cornerRadius = halfWidth;
     }
@@ -1267,7 +1267,7 @@ typedef NS_ENUM(NSInteger, CTOCropViewOverlayEdge) {
     CGFloat duration = editing ? 0.05f : 0.35f;
     CGFloat delay = editing? 0.0f : 0.35f;
     
-    if (self.croppingStyle == TOCropViewCroppingStyleCircular) {
+    if (self.croppingStyle == CTOCropViewCroppingStyleCircular) {
         delay = 0.0f;
     }
     

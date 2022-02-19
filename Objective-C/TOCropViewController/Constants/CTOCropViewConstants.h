@@ -1,5 +1,5 @@
 //
-//  TOCropViewConstants.h
+//  CTOCropViewConstants.h
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -26,32 +26,32 @@
  The shape of the cropping region of this crop view controller
  */
 typedef NS_ENUM(NSInteger, CTOCropViewCroppingStyle) {
-    TOCropViewCroppingStyleDefault,     // The regular, rectangular crop box
-    TOCropViewCroppingStyleCircular     // A fixed, circular crop box
+    CTOCropViewCroppingStyleDefault,     // The regular, rectangular crop box
+    CTOCropViewCroppingStyleCircular     // A fixed, circular crop box
 };
 
 /**
  Preset values of the most common aspect ratios that can be used to quickly configure
  the crop view controller.
  */
-typedef NS_ENUM(NSInteger, TOCropViewControllerAspectRatioPreset) {
-    TOCropViewControllerAspectRatioPresetOriginal,
-    TOCropViewControllerAspectRatioPresetSquare,
-    TOCropViewControllerAspectRatioPreset3x2,
-    TOCropViewControllerAspectRatioPreset5x3,
-    TOCropViewControllerAspectRatioPreset4x3,
-    TOCropViewControllerAspectRatioPreset5x4,
-    TOCropViewControllerAspectRatioPreset7x5,
-    TOCropViewControllerAspectRatioPreset16x9,
-    TOCropViewControllerAspectRatioPresetCustom
+typedef NS_ENUM(NSInteger, CTOCropViewControllerAspectRatioPreset) {
+    CTOCropViewControllerAspectRatioPresetOriginal,
+    CTOCropViewControllerAspectRatioPresetSquare,
+    CTOCropViewControllerAspectRatioPreset3x2,
+    CTOCropViewControllerAspectRatioPreset5x3,
+    CTOCropViewControllerAspectRatioPreset4x3,
+    CTOCropViewControllerAspectRatioPreset5x4,
+    CTOCropViewControllerAspectRatioPreset7x5,
+    CTOCropViewControllerAspectRatioPreset16x9,
+    CTOCropViewControllerAspectRatioPresetCustom
 };
 
 /**
  Whether the control toolbar is placed at the bottom or the top
  */
-typedef NS_ENUM(NSInteger, TOCropViewControllerToolbarPosition) {
-    TOCropViewControllerToolbarPositionBottom,  // Bar is placed along the bottom in portrait
-    TOCropViewControllerToolbarPositionTop     // Bar is placed along the top in portrait (Respects the status bar)
+typedef NS_ENUM(NSInteger, CTOCropViewControllerToolbarPosition) {
+    CTOCropViewControllerToolbarPositionBottom,  // Bar is placed along the bottom in portrait
+    CTOCropViewControllerToolbarPositionTop     // Bar is placed along the top in portrait (Respects the status bar)
 };
 
 static inline NSBundle *TO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT(NSObject *object) {
