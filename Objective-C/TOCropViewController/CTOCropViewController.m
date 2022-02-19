@@ -572,7 +572,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     BOOL verticalCropBox = self.cropView.cropBoxAspectRatioIsPortrait;
     
     // Get the resource bundle depending on the framework/dependency manager we're using
-	NSBundle *resourceBundle = TO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT(self);
+	NSBundle *resourceBundle = CTO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT(self);
     
     //Prepare the localized options
 	NSString *cancelButtonTitle = NSLocalizedStringFromTableInBundle(@"Cancel", @"TOCropViewControllerLocalizable", resourceBundle, nil);
@@ -852,7 +852,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     }
 
     // Get the resource bundle depending on the framework/dependency manager we're using
-    NSBundle *resourceBundle = TO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT(self);
+    NSBundle *resourceBundle = CTO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT(self);
 
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil
                                                                              message:nil

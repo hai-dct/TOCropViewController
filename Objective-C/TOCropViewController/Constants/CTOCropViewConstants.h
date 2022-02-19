@@ -54,7 +54,7 @@ typedef NS_ENUM(NSInteger, CTOCropViewControllerToolbarPosition) {
     CTOCropViewControllerToolbarPositionTop     // Bar is placed along the top in portrait (Respects the status bar)
 };
 
-static inline NSBundle *TO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT(NSObject *object) {
+static inline NSBundle *CTO_CROP_VIEW_RESOURCE_BUNDLE_FOR_OBJECT(NSObject *object) {
 #if SWIFT_PACKAGE
 	// SPM is supposed to support the keyword SWIFTPM_MODULE_BUNDLE
 	// but I can't figure out how to make it work, so doing it manually
