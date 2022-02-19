@@ -28,7 +28,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol TOCropViewDelegate<NSObject>
+@protocol CTOCropViewDelegate<NSObject>
 
 - (void)cropViewDidBecomeResettable:(nonnull CTOCropView *)cropView;
 - (void)cropViewDidBecomeNonResettable:(nonnull CTOCropView *)cropView;
@@ -60,7 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  A delegate object that receives notifications from the crop view
  */
-@property (nullable, nonatomic, weak) id<TOCropViewDelegate> delegate;
+@property (nullable, nonatomic, weak) id<CTOCropViewDelegate> delegate;
 
 /**
  If false, the user cannot resize the crop box frame using a pan gesture from a corner.

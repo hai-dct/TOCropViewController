@@ -30,7 +30,7 @@
 static const CGFloat kTOCropViewControllerTitleTopPadding = 14.0f;
 static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 
-@interface CTOCropViewController () <UIActionSheetDelegate, UIViewControllerTransitioningDelegate, TOCropViewDelegate>
+@interface CTOCropViewController () <UIActionSheetDelegate, UIViewControllerTransitioningDelegate, CTOCropViewDelegate>
 
 /* The target image */
 @property (nonatomic, readwrite) UIImage *image;
