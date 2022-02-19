@@ -422,20 +422,20 @@
 		2238CF331FC027380081B957 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
-				2238CF341FC027550081B957 /* CropViewController */,
+				2238CF341FC027550081B957 /* FCropViewController */,
 				2238CF211FC0269C0081B957 /* CropViewControllerExample */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
 		};
-		2238CF341FC027550081B957 /* CropViewController */ = {
+		2238CF341FC027550081B957 /* FCropViewController */ = {
 			isa = PBXGroup;
 			children = (
 				2238CF351FC029880081B957 /* CTCropViewController.swift */,
 				2238CF3E1FC029A90081B957 /* CTCropViewController.h */,
 				2238CF3F1FC029A90081B957 /* Info.plist */,
 			);
-			path = CropViewController;
+			path = FCropViewController;
 			sourceTree = "<group>";
 		};
 		2238CF581FC030C30081B957 /* Frameworks */ = {
@@ -1274,7 +1274,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Swift/CropViewController/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift/FCropViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1310,7 +1310,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Swift/CropViewController/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swift/FCropViewController/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
