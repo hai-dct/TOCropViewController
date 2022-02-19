@@ -1,5 +1,5 @@
 //
-//  TOCropViewControllerTransitioning.h
+//  CTOCropViewControllerTransitioning.h
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -25,7 +25,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TOCropViewControllerTransitioning : NSObject <UIViewControllerAnimatedTransitioning>
+@interface CTOCropViewControllerTransitioning : NSObject <UIViewControllerAnimatedTransitioning>
 
 /* State Tracking */
 @property (nonatomic, assign) BOOL isDismissing; // Whether this animation is presenting or dismissing

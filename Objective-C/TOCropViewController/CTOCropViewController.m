@@ -22,7 +22,7 @@
 
 #import "CTOCropViewController.h"
 
-#import "TOCropViewControllerTransitioning.h"
+#import "CTOCropViewControllerTransitioning.h"
 #import "TOActivityCroppedImageProvider.h"
 #import "UIImage+CropRotate.h"
 #import "TOCroppedImageAttributes.h"
@@ -46,7 +46,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
 
 /* Transition animation controller */
 @property (nonatomic, copy) void (^prepareForTransitionHandler)(void);
-@property (nonatomic, strong) TOCropViewControllerTransitioning *transitionController;
+@property (nonatomic, strong) CTOCropViewControllerTransitioning *transitionController;
 @property (nonatomic, assign) BOOL inTransition;
 
 /* If pushed from a navigation controller, the visibility of that controller's bars. */
@@ -88,7 +88,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
         self.hidesNavigationBar = true;
         
         // Controller object that handles the transition animation when presenting / dismissing this app
-        _transitionController = [[TOCropViewControllerTransitioning alloc] init];
+        _transitionController = [[CTOCropViewControllerTransitioning alloc] init];
 
         // Default initial behaviour
         _aspectRatioPreset = TOCropViewControllerAspectRatioPresetOriginal;
@@ -798,7 +798,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     __weak typeof (self) weakSelf = self;
     self.transitionController.prepareForTransitionHandler = ^{
         typeof (self) strongSelf = weakSelf;
-        TOCropViewControllerTransitioning *transitioning = strongSelf.transitionController;
+        CTOCropViewControllerTransitioning *transitioning = strongSelf.transitionController;
 
         transitioning.toFrame = [strongSelf.cropView convertRect:strongSelf.cropView.cropBoxFrame toView:strongSelf.view];
         if (!CGRectIsEmpty(transitioning.fromFrame) || transitioning.fromView) {
@@ -825,7 +825,7 @@ static const CGFloat kTOCropViewControllerToolbarHeight = 44.0f;
     __weak typeof (self) weakSelf = self;
     self.transitionController.prepareForTransitionHandler = ^{
         typeof (self) strongSelf = weakSelf;
-        TOCropViewControllerTransitioning *transitioning = strongSelf.transitionController;
+        CTOCropViewControllerTransitioning *transitioning = strongSelf.transitionController;
         
         if (!CGRectIsEmpty(transitioning.toFrame) || transitioning.toView) {
             strongSelf.cropView.croppingViewsHidden = YES;
