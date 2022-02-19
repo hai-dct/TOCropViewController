@@ -24,7 +24,7 @@
 
 #import "TOCropViewConstants.h"
 #import "TOCropView.h"
-#import "TOCropToolbar.h"
+#import "CTOCropToolbar.h"
 
 @class CTOCropViewController;
 
@@ -134,7 +134,7 @@
 /**
  The toolbar view managed by this view controller.
  */
-@property (nonnull, nonatomic, strong, readonly) TOCropToolbar *toolbar;
+@property (nonnull, nonatomic, strong, readonly) CTOCropToolbar *toolbar;
 
 /**
  The cropping style of this particular crop view controller

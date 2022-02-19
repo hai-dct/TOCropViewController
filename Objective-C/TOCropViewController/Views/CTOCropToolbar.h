@@ -1,5 +1,5 @@
 //
-//  TOCropToolbar.h
+//  CTOCropToolbar.h
 //
 //  Copyright 2015-2022 Timothy Oliver. All rights reserved.
 //
@@ -25,7 +25,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TOCropToolbar : UIView
+@interface CTOCropToolbar : UIView
 
 /* In horizontal mode, offsets all of the buttons vertically by height of status bar. */
 @property (nonatomic, assign) CGFloat statusBarHeightInset;
